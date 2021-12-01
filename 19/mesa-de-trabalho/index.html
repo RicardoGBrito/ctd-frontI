@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesa de trabalho</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<style type="text/css">
+    body{
+        background-color: rgb(91, 158, 237);
+
+    }
+
+    /*
+        1. Liste todos os itens verticalmente.
+    */
+    .lista {
+        display: flex;
+        flex-direction: column;
+        list-style-type:none;
+        align-items: center;
+        padding-top:5px;
+        padding-left:10px;
+        padding-right:10px;
+        background-color: white;
+        width:450px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
+    /*
+        2. Implemente o cartão de cada item conforme a imagem referência.
+    */
+    .cartao {
+        display: flex;     
+        width:450px;
+        margin:0px;        
+    }
+
+    .list-item {
+        border-bottom:2px solid rgba(128, 128, 128, 0.212);
+    }
+
+    li:last-child{
+        border:none;
+    }
+
+    .cartao__imagem{
+        border-radius: 50%;
+        transform: scale(0.7);
+    }
+    .cartao__titulo {
+        color:rgba(0, 0, 0, 0.589);
+        margin-left: 10px;
+        margin-bottom: 0 ;
+        font-size: 20px;
+        font-family: Montserrat;
+        margin-top:35px;
+        
+
+    }
+
+    .cartao__endereco {
+       margin-top: 5px;
+       margin-left: 10px;
+       color: rgba(128, 128, 128, 0.596);
+       font-family: Montserrat;
+       font-size: 15px;
+       font-weight: 500;
+
+        
+    }
+
+
+</style>
+<body>
+
+    <!-- 
+        Você deverá manipular a classe 'lista' para controlar o posicionamento dos itens. 
+        Busque aproximar-se ao máximo da imagem do resultado sedida pelo professor.
+    -->
+    <ul class="lista">
+        <li class="list-item">
+            <!-- 
+                Dica: Você deverá montar o design do cartão utilizando Flexbox também,
+                ou seja, você irá transformar o item em um conteúdo flexível com a propriedade display:flex.
+            -->
+            <figure class="cartao">
+                <img class="cartao__imagem" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/93.jpg" alt="Foto do usuário">
+                <figcaption class="cartao__corpo">
+                    <h4 class="cartao__titulo">Linda Hart</h4>
+                    <p class="cartao__endereco">6765 Shady Ln Dr</p>
+                </figcaption>
+            </figure>
+        </li>
+
+        <li class="list-item">
+            <figure class="cartao">
+                <img class="cartao__imagem" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/46.jpg" alt="Foto do usuário">
+                <figcaption class="cartao__corpo">
+                    <h4 class="cartao__titulo">Roger Medina</h4>
+                    <p class="cartao__endereco">2420 Paddock Way</p>
+                </figcaption>
+            </figure>
+        </li>
+
+        <li class="list-item">
+            <figure class="cartao">
+                <img class="cartao__imagem" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/59.jpg" alt="Foto do usuário">
+                <figcaption class="cartao__corpo">
+                    <h4 class="cartao__titulo">Dean Sullivan</h4>
+                    <p class="cartao__endereco">6727 Airplane Ave</p>
+                </figcaption>
+            </figure>
+        </li>
+
+        <li class="list-item">
+            <figure class="cartao">
+                <img class="cartao__imagem" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/78.jpg" alt="Foto do usuário">
+                <figcaption class="cartao__corpo">
+                    <h4 class="cartao__titulo">Elizabeth Austin</h4>
+                    <p class="cartao__endereco">6685 Blossom Hill Rd</p>
+                </figcaption>
+            </figure>
+        </li>
+        
+      </ul>
+
+</body>
+</html>
