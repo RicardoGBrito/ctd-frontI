@@ -21,7 +21,79 @@
             - Padrão do sistema: Arial, sans-serif.
 
         */
+        *{
+            margin:0px;
+            box-sizing: border-box;
+        }
         
+        .estrutura{
+            background-color:yellow;
+            width:1200px;
+            height: 800px;
+            margin:200px;
+            
+        }
+        .quadro{
+            position:relative;
+            top:30px;
+            background-color: white;
+            width: 1000px;
+            border-bottom: 4px solid #0389ca;
+            border-top: 4px solid #ffdf00;
+            margin-bottom: 150px;
+            margin-top: 150px;
+            margin-left: auto;
+            margin-right: auto;
+            overflow: hidden;
+            padding:50px;
+            border-radius: 200px;
+        }
+
+        .corpo_conteudo{
+            float: left;
+            margin: 50px;
+            width:20%;
+        }
+
+        h1 {
+            font-size: 20px;
+            font-family:sans-serif;
+            color: #ff8c40;
+
+        }
+
+        #interrogacao {
+            color: #ff8c40;
+            width: 40px;
+        }
+
+        p {
+            font-family: sans-serif;
+            font-size: 30px;
+            background-color: #ff8c40;
+            display:inline-block;
+            color: white;
+            border-radius: 250px;
+            padding-top:10px;
+            padding-bottom: 10px;  
+            padding-left: 20px;
+            padding-right: 20px;          
+        }
+            
+        .corpo__texto {
+            font-family: sans-serif;
+        }
+        
+        .botao{
+            margin: 0px auto;
+            width: 200px;
+            padding: 10px;
+            background-color: #ff8c40;
+            color: white;
+            float: left;
+            font-family: sans-serif;
+        }
+
     </style>
 </head>
 <body>
@@ -40,24 +112,32 @@
     Última alteração: -
 
 -->
-
-    <div>
-        <div>Como instalar?</div>
-        <div>
-            <div>
-                <img src="./imagens/miniatura.png" alt="Miniatura da primeira etapa">
-                <div>Navegue até o app.oestecarioca.org</div>
+    <div class="estrutura">
+        <main class="quadro">
+            <img id="interrogacao" src="./imagens/icone-interogacao.png" alt="Ponto de Interrogação">
+            <h1 class="titulo">Como instalar?</h1>
+            <article class="corpo">
+                <section class="corpo_conteudo">
+                    <p>1</p>
+                    <img src="./imagens/miniatura.png" alt="Miniatura da primeira etapa">
+                    <div class="corpo__texto">Navegue até o app.oestecarioca.org</div>
+                </section>
+                <section class="corpo_conteudo" >
+                    <p>2</p>
+                    <img src="./imagens/miniatura.png" alt="Miniatura da segunda etapa">
+                    <div class="corpo__texto">Clique no botão Menu</div>
+                </section>
+                <section class="corpo_conteudo">
+                    <p>3</p>
+                    <img src="./imagens/miniatura.png" alt="Miniatura da terçeira etapa">
+                    <div class="corpo__texto">Selecione a opção Adicionar Tela Principal</div>
+                </section>
+            </article>
+            <div class="botao">
+                <img id="play" src="./imagens/icone-play.png" alt="Ponto de Interrogação">
+                <a href="">Assista ao vídeo</a>
             </div>
-            <div>
-                <img src="./imagens/miniatura.png" alt="Miniatura da segunda etapa">
-                <div>Clique no botão Menu</div>
-            </div>
-            <div>
-                <img src="./imagens/miniatura.png" alt="Miniatura da terçeira etapa">
-                <div>Selecione a opção Adicionar Tela Principal</div>
-            </div>
-        </div>
-        <div>Assista ao vídeo</div>
+        </main>
     </div>
 
 </body>
