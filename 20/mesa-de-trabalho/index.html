@@ -9,35 +9,113 @@
         /*
             1. Liste todos os itens verticalmente.
         */
-        .lista {
-            display: flex;
+
+        body {
+            background-color: #2c70ff;
         }
-    
+        .lista {
+            display: grid;
+            list-style: none;
+            width:400px;
+            margin-left: auto;
+            margin-right: auto;
+            grid-row: 4;
+            background-color: white;
+            
+
+        }
+        
         /*
-            2. Implemente o cartão de cada item conforme a imagem referência.
+        2. Implemente o cartão de cada item conforme a imagem referência.
         */
         .cartao {
             display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding-right: 20px;
+            padding-left:20px;
+            padding-bottom: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left:-10px;
+            
+            
         }
-    
+        .list-item{
+            border-bottom: 1px solid rgba(128, 128, 128, 0.178);
+            margin-left:-20px;
+            margin-right:20px;
+            
+        }
+        li:last-child{
+            border: none;
+        }
+        .cartao__imagem {
+            border-radius: 100%;
+        }
+        
+        .cartao__titulo{
+           margin-top: 45px;
+           margin-bottom:5px;
+           color: #333333d2;
+
+
+        }
+        
+        .cartao__endereco {
+            color: gray;
+            margin:0px;
+        }
     </style>
 </head>
 <body>
-    
-    <!-- 
-        Atividade 1: Implemente o layout da aula anterior utilizando Grid layout 
+        <!-- 
+        Você deverá manipular a classe 'lista' para controlar o posicionamento dos itens. 
+        Busque aproximar-se ao máximo da imagem do resultado sedida pelo professor.
     -->
-    <div class="l-sessao l-atividade1">
+    <ul class="lista">
+        <li class="list-item">
+            <!-- 
+                Dica: Você deverá montar o design do cartão utilizando Flexbox também,
+                ou seja, você irá transformar o item em um conteúdo flexível com a propriedade display:flex.
+            -->
+            <figure class="cartao">
+                <img class="cartao__imagem" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/93.jpg" alt="Foto do usuário">
+                <figcaption class="cartao__corpo">
+                    <h4 class="cartao__titulo">Linda Hart</h4>
+                    <p class="cartao__endereco">6765 Shady Ln Dr</p>
+                </figcaption>
+            </figure>
+        </li>
 
-    </div>
+        <li class="list-item">
+            <figure class="cartao">
+                <img class="cartao__imagem" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/46.jpg" alt="Foto do usuário">
+                <figcaption class="cartao__corpo">
+                    <h4 class="cartao__titulo">Roger Medina</h4>
+                    <p class="cartao__endereco">2420 Paddock Way</p>
+                </figcaption>
+            </figure>
+        </li>
 
-    <!-- 
-        Atividade 2: Implemente o layout da aula anterior utilizando Grid layout 
-    -->
-    <div class="l-sessao l-atividade1">
+        <li class="list-item">
+            <figure class="cartao">
+                <img class="cartao__imagem" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/59.jpg" alt="Foto do usuário">
+                <figcaption class="cartao__corpo">
+                    <h4 class="cartao__titulo">Dean Sullivan</h4>
+                    <p class="cartao__endereco">6727 Airplane Ave</p>
+                </figcaption>
+            </figure>
+        </li>
 
-    </div>
-    
-
+        <li class="list-item">
+            <figure class="cartao">
+                <img class="cartao__imagem" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/78.jpg" alt="Foto do usuário">
+                <figcaption class="cartao__corpo">
+                    <h4 class="cartao__titulo">Elizabeth Austin</h4>
+                    <p class="cartao__endereco">6685 Blossom Hill Rd</p>
+                </figcaption>
+            </figure>
+        </li>
+        
+      </ul>
 </body>
 </html>
